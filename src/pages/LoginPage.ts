@@ -22,7 +22,18 @@ export class LoginPage {
     await this.page.click("button[type='submit']");
   }
 
+  async login(username: string, password: string) {
+    await this.fillUsername(username);
+    await this.fillPassword(password);
+    await this.submit();
+  }
+
   async getFlashMessage() {
     return this.page.locator('#flash').textContent();
+  }
+
+  async isLoggedIn() {
+    const message = await this.getFlashMessage();
+    return message?.includes('secure area') ?? false;
   }
 }

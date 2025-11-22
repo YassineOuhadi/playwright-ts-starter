@@ -1,6 +1,12 @@
 # Playwright TS Starter
 
-A simple Playwright TypeScript project for E2E testing.
+A simple Playwright TypeScript project for E2E testing:
+
+- Uses Playwright Fixtures
+- Includes Page Object Pattern
+- Supports trace debugging
+- Generates HTML reports
+- GitHub Pages auto-publishes HTML report
 
 ## Get Started
 
@@ -15,7 +21,7 @@ npx playwright test
 npx playwright show-report
 ```
 
-View HTML test report: [Playwright Report](https://<username>.github.io/<repo-name>/)
+View HTML test report: [Playwright Report](https://yassineouhadi.github.io/playwright-ts-starter/playwright-report/)
 
 ## Project Structure
 
